@@ -3,7 +3,7 @@
 const express = require("express");
 
 const dotenv = require("dotenv");
-
+PORT = 5000;
 dotenv.config();
 
 // import mongoose
@@ -64,8 +64,8 @@ app.get("/users", (req, res) => {
   });
 });
 
-app.listen(5000, () => {
-  console.log("Server is running on port 5000");
+app.listen(PORT, () => {
+  console.log(`Server is running on port localhost:${PORT}`);
 });
 
 // KDRllz4u1r3YpzXa
