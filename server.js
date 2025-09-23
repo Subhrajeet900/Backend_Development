@@ -14,10 +14,17 @@ const mongoose = require("mongoose");
 
 const userRouter = require("./routes/user.routes");
 
+//import post router
+const postRouter = require("./routes/post.routes");
+
 // app
 const app = express();
 
 app.use(express.json());
+
+//new routes
+app.use("/api", postRouter);
+app.use("api/posts", postRouter);
 
 // database connection
 
