@@ -39,7 +39,7 @@ app.use("/api", userRouter);
 app.get("/users", (req, res) => {
   //logic
 
-  return res.json({
+  return res.json({    //schemas
     users: [
       {
         id: 1,
