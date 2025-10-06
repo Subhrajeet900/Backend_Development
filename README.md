@@ -7,3 +7,5 @@ Roll no - 2401350018
 
 
 mongoose is a odm(object document management)
+
+learning Backend (Nodejs) series from scratch .
